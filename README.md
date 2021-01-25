@@ -1,6 +1,6 @@
 # One Neovim Theme
 
-An Atom One inspired dark and light colorscheme for neovim.
+An Atom One inspired dark and light colorscheme for neovim. Plugin modeled after [highlite.vim](https://github.com/Iron-E/nvim-highlite/blob/master/colors/highlite.vim) template
 
 ## Screenshots
 
