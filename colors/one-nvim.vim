@@ -553,9 +553,11 @@ local highlight_groups = {
 -- Coc.nvim
 CocFloating = { bg = none },
 NormalFloating = { bg = none },
+
 -----------------------------
 --     LSP Highlighting    --
 -----------------------------
+
 LspDiagnosticsDefaultError           = { fg = hue_5 },
 LspDiagnosticsDefaultWarning         = { fg = hue_6_2 },
 LspDiagnosticsDefaultInformation     = { fg = hue_1 },
@@ -576,6 +578,10 @@ LspDiagnosticsSignError              = { fg = hue_5 },
 LspDiagnosticsSignWarning            = { fg = hue_6_2 },
 LspDiagnosticsSignInformation        = { fg = hue_1 },
 LspDiagnosticsSignHint               = { fg = hue_4 },
+LspReferenceText                     = { style = 'reverse' },
+LspReferenceRead                     = { style = 'reverse' },
+LspReferenceWrite                    = { bg = hue_6_2, style = 'reverse' },
+
 -----------------------------
 -- TreeSitter Highlighting --
 -----------------------------
