@@ -17,10 +17,6 @@ Light theme
 *RGB Highlightin:* [nvim-colorizer.](https://github.com/norcalli/nvim-colorizer.lua)
 *Minimap* [minimap.vim](https://github.com/wfxr/minimap.vim)
 
-### Getting Started
-
-Only termguicolors are supported and that will not change.
-
 #### Vim Plug
 
 ```vim
@@ -56,6 +52,13 @@ packadd! one-nvim
 
 ```vim
 colorscheme one-nvim
+```
+
+### Transparent background
+###### Require terminal with transparent background
+
+```lua
+vim.g.one_nvim_transparent_bg = true
 ```
 
 ### NOTE

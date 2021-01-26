@@ -67,12 +67,20 @@ local NONE = {}
 -- This is the only highlight that must be defined separately.
 local highlight_group_normal = {fg = mono_1, bg = syntax_bg}
 
+local normal = (function()
+    if vim.g.one_nvim_transparent_bg ~= true then
+        return  { fg = mono_1, bg = syntax_bg }
+    else
+        return  { fg = mono_1, bg = NONE }
+    end
+end)()
+
 -- This is where the rest of your highlights should go.
 local highlight_groups = {
     -------------------------------------------------------------
     -- Syntax Groups (descriptions and ordering from `:h w18`) --
     -------------------------------------------------------------
-     Normal       = { fg = mono_1, bg = syntax_bg },
+     Normal       = normal,
      bold         = { style = 'bold'},
      ColorColumn  = { fg = none, bg = syntax_cursor },
      Conceal      = { fg = mono_4, bg = syntax_bg },
