@@ -2,79 +2,61 @@ lua << EOF
 vim.g.colors_name = "one-nvim"
 
 if vim.o.background == "dark" then
-    -- Dark Colors
-    mono_1        = {"#abb2bf", 145, "mono_1"}
-    mono_2        = {"#828997", 102, "mono_2"}
-    mono_3        = {"#5c6370",  59, "mono_3"}
-    mono_4        = {"#4b5263", 240, "mono_4"}
-    hue_1         = {"#56b6c2", 247, "hue_1"}
-    hue_2         = {"#61afef",  75, "hue_2"}
-    hue_3         = {"#c678dd", 176, "hue_3"}
-    hue_4         = {"#98c379", 114, "hue_4"}
-    hue_5         = {"#e06c75", 168, "hue_5"}
-    hue_5_2       = {"#be5046", 131, "hue_5_2"}
-    hue_6         = {"#d19a66", 247, "hue_6"}
-    hue_6_2       = {"#e5c07b", 180, "hue_6_2"}
-    syntax_bg     = {"#282c34",  17, "syntax_bg"}
-    syntax_gutter = {"#636d83", 243, "syntax_gutter"}
-    syntax_cursor = {"#2c323c",  23, "syntax_cursor"}
-    syntax_accent = {"#528bff",  69, "syntax_accent"}
-    vertsplit     = {"#181a1f",  234, "vertsplit"}
-    special_grey  = {"#3b4048",  238, "special_grey"}
-    visual_grey   = {"#3e4452",  59, "visual_grey"}
-    pmenu         = {"#333841",  59, "pmenu"}
-
-     term_black    = {"#282c34",  59, "term_black"}
-     term_red      = {"#e06c75", 174, "term_red"}
-     term_green    = {"#98c379", 248, "term_green"}
-     term_yellow   = {"#e5c07b", 250, "term_yellow"}
-     term_blue     = {"#61afef", 249, "term_blue"}
-     term_magenta  = {"#c678dd", 251, "term_magenta"}
-     term_cyan     = {"#56b6c2", 248, "term_cyan"}
-     term_white    = {"#dcdfe4", 254, "term_white"}
+     -- Dark Colors
+     mono_1        = {"#abb2bf", 145, "mono_1"}
+     mono_2        = {"#828997", 102, "mono_2"}
+     mono_3        = {"#5c6370",  59, "mono_3"}
+     mono_4        = {"#4b5263", 240, "mono_4"}
+     hue_1         = {"#56b6c2", 247, "hue_1"}
+     hue_2         = {"#61afef",  75, "hue_2"}
+     hue_3         = {"#c678dd", 176, "hue_3"}
+     hue_4         = {"#98c379", 114, "hue_4"}
+     hue_5         = {"#e06c75", 168, "hue_5"}
+     hue_5_2       = {"#be5046", 131, "hue_5_2"}
+     hue_6         = {"#d19a66", 247, "hue_6"}
+     hue_6_2       = {"#e5c07b", 180, "hue_6_2"}
+     syntax_bg     = {"#282c34",  17, "syntax_bg"}
+     syntax_gutter = {"#636d83", 243, "syntax_gutter"}
+     syntax_cursor = {"#2c323c",  23, "syntax_cursor"}
+     syntax_accent = {"#528bff",  69, "syntax_accent"}
+     vertsplit     = {"#181a1f",  234, "vertsplit"}
+     special_grey  = {"#3b4048",  238, "special_grey"}
+     visual_grey   = {"#3e4452",  59, "visual_grey"}
+     pmenu         = {"#333841",  59, "pmenu"}
+     term_black    = {"#282c34",  17, "term_black"}
+     term_blue     = {"#61afef",  75, "term_blue"}
+     term_cyan     = {"#56b6c2", 247, "term_cyan"}
+     term_white    = {"#dcdfe4", 188, "term_white"}
 else
-    -- Light Colors
-    mono_1        = {"#494b53",  59, "mono_1"}
-    mono_2        = {"#696c77",  60, "mono_2"}
-    mono_3        = {"#a0a1a7", 247, "mono_3"}
-    mono_4        = {"#c2c2c3", 251, "mono_4"}
-    hue_1         = {"#0184bc",  31, "hue_1"}
-    hue_2         = {"#4078f2",  69, "hue_2"}
-    hue_3         = {"#a626a4", 243, "hue_3"}
-    hue_4         = {"#50a14f", 242, "hue_4"}
-    hue_5         = {"#e45649", 244, "hue_5"}
-    hue_5_2       = {"#ca1243", 241, "hue_5_2"}
-    hue_6         = {"#986801",  94, "hue_6"}
-    hue_6_2       = {"#c18401", 242, "hue_6_2"}
-    syntax_bg     = {"#fafafa", 231, "syntax_bg"}
-    syntax_gutter = {"#9e9e9e", 247, "syntax_gutter"}
-    syntax_cursor = {"#f0f0f0", 255, "syntax_cursor"}
-    syntax_accent = {"#526fff", 246, "syntax_accent"}
-    vertsplit     = {"#e7e9e1", 254, "vertsplit"}
-    special_grey  = {"#d3d3d3", 252, "special_grey"}
-    visual_grey   = {"#d0d0d0", 252, "visual_grey"}
-    pmenu         = {"#dfdfdf", 254, "pmenu"}
-     term_black    = {"#383a42",  59, "term_black"}
-     term_red      = {"#45649", 174, "term_red"}
-     term_green    = {"#50a14f", 248, "term_green"}
-     term_yellow   = {"#c18401", 250, "term_yellow"}
-     term_blue     = {"#0184bc", 249, "term_blue"}
-     term_magenta  = {"#a626a4", 251, "term_magenta"}
-     term_cyan     = {"#0997b3", 248, "term_cyan"}
-     term_white    = {"#fafafa", 254, "term_white"}
+     -- Light Colors
+     mono_1        = {"#494b53",  59, "mono_1"}
+     mono_2        = {"#696c77",  60, "mono_2"}
+     mono_3        = {"#a0a1a7", 247, "mono_3"}
+     mono_4        = {"#c2c2c3", 251, "mono_4"}
+     hue_1         = {"#0184bc",  31, "hue_1"}
+     hue_2         = {"#4078f2",  69, "hue_2"}
+     hue_3         = {"#a626a4", 243, "hue_3"}
+     hue_4         = {"#50a14f", 242, "hue_4"}
+     hue_5         = {"#e45649", 244, "hue_5"}
+     hue_5_2       = {"#ca1243", 241, "hue_5_2"}
+     hue_6         = {"#986801",  94, "hue_6"}
+     hue_6_2       = {"#c18401", 242, "hue_6_2"}
+     syntax_bg     = {"#fafafa", 231, "syntax_bg"}
+     syntax_gutter = {"#9e9e9e", 247, "syntax_gutter"}
+     syntax_cursor = {"#f0f0f0", 255, "syntax_cursor"}
+     syntax_accent = {"#526fff", 246, "syntax_accent"}
+     vertsplit     = {"#e7e9e1", 254, "vertsplit"}
+     special_grey  = {"#d3d3d3", 252, "special_grey"}
+     visual_grey   = {"#d0d0d0", 252, "visual_grey"}
+     pmenu         = {"#dfdfdf", 254, "pmenu"}
+     term_black    = {"#383a42", 237, "term_black"}
+     term_blue     = {"#0184bc", 31, "term_blue"}
+     term_cyan     = {"#0997b3", 243, "term_cyan"}
+     term_white    = {"#fafafa", 231, "term_white"}
 end
 
 -- Common 
 local pink = {"#d291e4", 251, "pink"}
-
-local black    = {"#383a42",  59, "tc1"}
-local red      = {"#45649", 174, "tc2"}
-local green    = {"#50a14f", 248, "tc3"}
-local yellow   = {"#c18401", 250, "tc4"}
-local blue     = {"#0184bc", 249, "tc5"}
-local magenta  = {"#a626a4", 251, "tc6"}
-local cyan     = {"#0997b3", 248, "tc7"}
-local white    = {"#fafafa", 254, "tc8"}
 
 --[[ DO NOT EDIT `BG` NOR `FG`. ]]
 local BG = "bg"
@@ -624,19 +606,19 @@ NormalFloating = { bg = none },
 
 local terminal_ansi_colors = {
     [0]  = term_black,
-    [1]  = term_red,
-    [2]  = term_green,
-    [3]  = term_yellow,
+    [1]  = hue_5,
+    [2]  = hue_4,
+    [3]  = hue_6_2,
     [4]  = term_blue,
-    [5]  = term_magenta,
+    [5]  = hue_3,
     [6]  = term_cyan,
     [7]  = term_white,
     [8]  = term_black,
-    [9]  = term_red,
-    [10] = term_green,
-    [11] = term_yellow,
+    [9]  = hue_5,
+    [10] = hue_4,
+    [11] = hue_6_2,
     [12] = term_blue,
-    [13] = term_magenta,
+    [13] = hue_3,
     [14] = term_cyan,
     [15] = term_white
 }
