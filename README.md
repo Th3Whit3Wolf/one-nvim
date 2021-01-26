@@ -65,9 +65,3 @@ vim.g.one_nvim_transparent_bg = true
 
 - Vim is not supported because the theme is written in lua.
 - If you feel like a language should be highlighted differently please open an issue.
-
-### TODO
-
-- [ ] Better LSP Highlighting
-- [ ] Better Diagnostic Highlighting
-- [ ] Better Tree Sitter Highlighting
