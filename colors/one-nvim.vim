@@ -580,7 +580,7 @@ LspDiagnosticsSignInformation        = { fg = hue_1 },
 LspDiagnosticsSignHint               = { fg = hue_4 },
 LspReferenceText                     = { style = 'reverse' },
 LspReferenceRead                     = { style = 'reverse' },
-LspReferenceWrite                    = { bg = hue_6_2, style = 'reverse' },
+LspReferenceWrite                    = { fg = hue_6_2, style = 'reverse' },
 
 -----------------------------
 -- TreeSitter Highlighting --
