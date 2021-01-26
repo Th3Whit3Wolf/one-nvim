@@ -17,6 +17,12 @@ Light theme
 *RGB Highlightin:* [nvim-colorizer.](https://github.com/norcalli/nvim-colorizer.lua)
 *Minimap* [minimap.vim](https://github.com/wfxr/minimap.vim)
 
+## Prerequisites
+
+1. Neovim 0.5+
+
+### Installation
+
 #### Vim Plug
 
 ```vim
