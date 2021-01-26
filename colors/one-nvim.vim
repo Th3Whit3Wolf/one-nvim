@@ -23,6 +23,15 @@ if vim.o.background == "dark" then
     special_grey  = {"#3b4048",  238, "special_grey"}
     visual_grey   = {"#3e4452",  59, "visual_grey"}
     pmenu         = {"#333841",  59, "pmenu"}
+
+     term_black    = {"#282c34",  59, "term_black"}
+     term_red      = {"#e06c75", 174, "term_red"}
+     term_green    = {"#98c379", 248, "term_green"}
+     term_yellow   = {"#e5c07b", 250, "term_yellow"}
+     term_blue     = {"#61afef", 249, "term_blue"}
+     term_magenta  = {"#c678dd", 251, "term_magenta"}
+     term_cyan     = {"#56b6c2", 248, "term_cyan"}
+     term_white    = {"#dcdfe4", 254, "term_white"}
 else
     -- Light Colors
     mono_1        = {"#494b53",  59, "mono_1"}
@@ -45,18 +54,27 @@ else
     special_grey  = {"#d3d3d3", 252, "special_grey"}
     visual_grey   = {"#d0d0d0", 252, "visual_grey"}
     pmenu         = {"#dfdfdf", 254, "pmenu"}
+     term_black    = {"#383a42",  59, "term_black"}
+     term_red      = {"#45649", 174, "term_red"}
+     term_green    = {"#50a14f", 248, "term_green"}
+     term_yellow   = {"#c18401", 250, "term_yellow"}
+     term_blue     = {"#0184bc", 249, "term_blue"}
+     term_magenta  = {"#a626a4", 251, "term_magenta"}
+     term_cyan     = {"#0997b3", 248, "term_cyan"}
+     term_white    = {"#fafafa", 254, "term_white"}
 end
 
 -- Common 
 local pink = {"#d291e4", 251, "pink"}
-local tc1  = {"#353a44",  59, "tc1"}
-local tc2  = {"#e88388", 174, "tc2"}
-local tc3  = {"#a7cc8c", 248, "tc3"}
-local tc4  = {"#ebca8d", 250, "tc4"}
-local tc5  = {"#72bef2", 249, "tc5"}
-local tc6  = {"#d291e4", 251, "tc6"}
-local tc7  = {"#65c2cd", 248, "tc7"}
-local tc8  = {"#e3e5e9", 254, "tc8"}
+
+local black    = {"#383a42",  59, "tc1"}
+local red      = {"#45649", 174, "tc2"}
+local green    = {"#50a14f", 248, "tc3"}
+local yellow   = {"#c18401", 250, "tc4"}
+local blue     = {"#0184bc", 249, "tc5"}
+local magenta  = {"#a626a4", 251, "tc6"}
+local cyan     = {"#0997b3", 248, "tc7"}
+local white    = {"#fafafa", 254, "tc8"}
 
 --[[ DO NOT EDIT `BG` NOR `FG`. ]]
 local BG = "bg"
@@ -605,23 +623,24 @@ NormalFloating = { bg = none },
 }
 
 local terminal_ansi_colors = {
-    [1] = tc1,
-    [2] = tc2,
-    [3] = tc3,
-    [4] = tc4,
-    [5] = tc5,
-    [6] = tc6,
-    [7] = tc7,
-    [8] = tc8,
-    [9] = tc1,
-    [10] = tc2,
-    [11] = tc3,
-    [12] = tc4,
-    [13] = tc5,
-    [14] = tc6,
-    [15] = tc7,
-    [16] = tc8
+    [0]  = term_black,
+    [1]  = term_red,
+    [2]  = term_green,
+    [3]  = term_yellow,
+    [4]  = term_blue,
+    [5]  = term_magenta,
+    [6]  = term_cyan,
+    [7]  = term_white,
+    [8]  = term_black,
+    [9]  = term_red,
+    [10] = term_green,
+    [11] = term_yellow,
+    [12] = term_blue,
+    [13] = term_magenta,
+    [14] = term_cyan,
+    [15] = term_white
 }
+
 
 require(vim.g.colors_name)(highlight_group_normal, highlight_groups, terminal_ansi_colors)
 
