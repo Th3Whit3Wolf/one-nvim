@@ -15,6 +15,7 @@ Light theme
 *Font:* Jet Brains Mono
 *Statusline:* [Spaceline](https://github.com/glepnir/spaceline.vim)
 *RGB Highlightin:* [nvim-colorizer.](https://github.com/norcalli/nvim-colorizer.lua)
+*Minimap* [minimap.vim](https://github.com/wfxr/minimap.vim)
 
 ### Getting Started
 
