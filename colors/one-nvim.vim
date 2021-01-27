@@ -90,7 +90,7 @@ local highlight_groups = {
      CursorLine   = { fg = none, bg = syntax_cursor },
      Directory    = { fg = hue_2 },
      ErrorMsg     = { fg = hue_5, bg = syntax_bg },
-     VertSplit    = { fg = vertsplit, bg = vertsplit },
+     VertSplit    = { fg = vertsplit },
      Folded       = { fg = mono_3, bg = syntax_bg },
      FoldColumn   = { fg = mono_3, bg = syntax_cursor },
      IncSearch    = { fg = hue_6 },
