@@ -14,12 +14,6 @@ local _USE_HEX = vim.o.termguicolors
 local _USE_256 = tonumber(vim.o.t_Co) > 255
 	or string.find(vim.env.TERM, '256')
 
--- Determine which set of colors to use.
-local _USE_HEX = vim.o.termguicolors
-local _USE_256 = tonumber(vim.o.t_Co) > 255
-    or string.find(vim.env.TERM, '256')
-    
-
 --[[ HELPER FUNCTIONS ]]
 
 -- Add the 'blend' parameter to some highlight command, if there is one.
