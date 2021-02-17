@@ -27,6 +27,7 @@ if vim.o.background == "dark" then
      term_blue     = {"#61afef",  75, "term_blue"}
      term_cyan     = {"#56b6c2", 247, "term_cyan"}
      term_white    = {"#dcdfe4", 188, "term_white"}
+     term_8        = {"#5d677a", 242, "term_8"}
 else
      -- Light Colors
      mono_1        = {"#494b53",  59, "mono_1"}
@@ -53,6 +54,7 @@ else
      term_blue     = {"#0184bc", 31, "term_blue"}
      term_cyan     = {"#0997b3", 243, "term_cyan"}
      term_white    = {"#fafafa", 231, "term_white"}
+     term_8        = {"#4f525e", 240, "term_8"}
 end
 
 -- Common 
@@ -646,7 +648,7 @@ local terminal_ansi_colors = {
     [5]  = hue_3,
     [6]  = term_cyan,
     [7]  = term_white,
-    [8]  = term_black,
+    [8]  = term_8,
     [9]  = hue_5,
     [10] = hue_4,
     [11] = hue_6_2,
