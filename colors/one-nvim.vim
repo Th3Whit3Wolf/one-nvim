@@ -95,7 +95,7 @@ local highlight_groups = {
      VertSplit    = { fg = vertsplit },
      Folded       = { fg = mono_3, bg = syntax_bg },
      FoldColumn   = { fg = mono_3, bg = syntax_cursor },
-     IncSearch    = { fg = hue_6 },
+     IncSearch    = { fg = hue_6, bg = mono_3 },
      LineNr       = { fg = mono_4 },
      CursorLineNr = { fg = mono_1, bg = syntax_cursor },
      MatchParen   = { fg = hue_5, bg = syntax_cursor, style = 'underline,bold' },
