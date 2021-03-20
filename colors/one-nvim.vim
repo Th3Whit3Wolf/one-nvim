@@ -23,7 +23,7 @@ if vim.o.background == "dark" then
      hue_5_2       = {"#be5046", 131, "hue_5_2"} -- hsl(  5, 48%, 51%);
      hue_6         = {"#d19a66", 247, "hue_6"}   -- hsl( 29, 54%, 61%);
      hue_6_2       = {"#e5c07b", 180, "hue_6_2"} -- hsl( 39, 67%, 69%);
-     syntax_bg     = {"#282a2e", 235, "syntax_bg"}     -- hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+     syntax_bg     = {"#282c34",  17, "syntax_bg"}     -- hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
      syntax_gutter = {"#636d83", 241, "syntax_gutter"} -- darken(@syntax-fg, 26%);
      syntax_cursor = {"#2c323c",  23, "syntax_cursor"} 
      syntax_accent = {"#528bff",  69, "syntax_accent"} -- hsl(@syntax-hue, 100%, 66% );
@@ -31,7 +31,7 @@ if vim.o.background == "dark" then
      special_grey  = {"#3b4048", 238, "special_grey"}
      visual_grey   = {"#3e4452",  59, "visual_grey"}
      pmenu         = {"#333841",  59, "pmenu"}
-     term_black    = {"#282a2e", 235, "term_black"}
+     term_black    = {"#282c34",  17, "term_black"}
      term_blue     = {"#61afef",  75, "term_blue"}
      term_cyan     = {"#56b6c2", 247, "term_cyan"}
      term_white    = {"#dcdfe4", 188, "term_white"}
