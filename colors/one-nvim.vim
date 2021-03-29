@@ -36,9 +36,6 @@ if vim.o.background == "dark" then
      term_cyan     = {"#56b6c2", 247, "term_cyan"}
      term_white    = {"#dcdfe4", 188, "term_white"}
      term_8        = {"#5d677a", 242, "term_8"}
-     syntax_color_added    = {"#43d08a", 78, "syntax_color_added"}     -- hsl(150,  60%, 54%);
-     syntax_color_modified = {"#e0c285", 250, "syntax_color_modified"} -- hsl(40,   60%, 70%);
-     syntax_color_removed  = {"#e05252", 244, "syntax_color_removed"}   -- hsl(0,    70%, 60%);
 else 
      --[[ 
           Light Colors
@@ -74,14 +71,10 @@ else
      term_cyan     = {"#0997b3", 243, "term_cyan"}
      term_white    = {"#fafafa", 231, "term_white"}
      term_8        = {"#4f525e", 240, "term_8"}
-     syntax_color_added    = {"#2db448", 65, "syntax_color_added"}    -- hsl(132,  60%, 44%);
-     syntax_color_modified = {"#f2a60d", 137, "syntax_color_modified"} -- hsl(40,   90%, 50%);
-     syntax_color_removed  = {"#ff1414", 88, "syntax_color_removed"}  -- hsl(0,    100%, 54%);
 end
 
 -- Common 
 local pink = {"#d291e4", 251, "pink"}
-syntax_color_renamed  = {"#33a0ff", 75, "syntax_color_renamed"}  -- hsl(208, 100%, 60%);
 
 -- Vim Primary Colors
 --[[
@@ -227,9 +220,9 @@ local highlight_groups = {
 -- Diff Highlighting --
 -----------------------
 
-     DiffAdd     = { fg = syntax_color_added, bg = visual_grey},
-     DiffChange  = { fg = syntax_color_modified, bg = visual_grey},
-     DiffDelete  = { fg = syntax_color_removed, bg = visual_grey},
+     DiffAdd     = { fg = hue_4, bg = visual_grey},
+     DiffChange  = { fg = hue_6_2, bg = visual_grey},
+     DiffDelete  = { fg = hue_5, bg = visual_grey},
      DiffText    = { fg = hue_2, bg = visual_grey},
      DiffAdded   = { fg = hue_4, bg = visual_grey},
      DiffFile    = { fg = hue_5, bg = visual_grey},
@@ -349,9 +342,9 @@ local highlight_groups = {
      gitcommitDiscardedArrow = 'gitcommitDiscardedFile',
      gitcommitSelectedArrow  = 'gitcommitSelectedFile',
      gitcommitUnmergedArrow  = 'gitcommitUnmergedFile',
-     SignifySignAdd          = { fg = syntax_color_added },
-     SignifySignChange       = { fg = syntax_color_modified },
-     SignifySignDelete       = { fg = syntax_color_removed },
+     SignifySignAdd          = { fg = hue_4 },
+     SignifySignChange       = { fg = hue_6_2 },
+     SignifySignDelete       = { fg = hue_5 },
      GitGutterAdd            = 'SignifySignAdd',
      GitGutterChange         = 'SignifySignChange',
      GitGutterDelete         = 'SignifySignDelete',
