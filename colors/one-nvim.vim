@@ -132,6 +132,7 @@ local highlight_groups = {
     -- Syntax Groups (descriptions and ordering from `:h w18`) --
     -------------------------------------------------------------
      Normal       = normal,
+     NormalFloat  = normal,
      bold         = { style = 'bold'},
      ColorColumn  = { fg = none, bg = syntax_cursor },
      Conceal      = { fg = mono_4, bg = syntax_bg },
@@ -194,6 +195,7 @@ local highlight_groups = {
      Number         = { fg = hue_6, bg = none},
      Boolean        = { fg = hue_6, bg = none},
      Float          = { fg = hue_6, bg = none},
+     FloatBorder    = { fg = mono_1, bg = none},
      Identifier     = { fg = hue_5, bg = none},
      Function       = { fg = hue_2, bg = none},
      Statement      = { fg = hue_3, bg = none},
