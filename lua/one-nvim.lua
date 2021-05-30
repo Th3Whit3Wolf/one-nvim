@@ -11,7 +11,7 @@ local _TYPE_TABLE  = 'table'
 
 -- Determine which set of colors to use.
 local _USE_HEX = vim.o.termguicolors
-local _USE_256 = tonumber(vim.o.t_Co) > 255
+local _USE_256 = tonumber(vim.go.t_Co) > 255
 	or string.find(vim.env.TERM, '256')
 
 --[[ HELPER FUNCTIONS ]]
@@ -167,7 +167,7 @@ return setmetatable(highlite, {
 		color_name = nil
 
 		-- If we aren't using hex nor 256 colorsets.
-		if not (_USE_HEX or _USE_256) then vim.o.t_Co = '16' end
+		if not (_USE_HEX or _USE_256) then vim.go.t_Co = '16' end
 
 		-- Highlight the baseline.
 		self.highlight('Normal', normal)
